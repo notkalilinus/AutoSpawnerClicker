@@ -1,1 +1,9 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.fabricmc.net/' }  // Fabric plugin repo
+        gradlePluginPortal()                        // Default Gradle plugin portal
+        mavenCentral()                              // Central repo for dependencies
+    }
+}
+
 rootProject.name = "AutoSpawnerClicker"
