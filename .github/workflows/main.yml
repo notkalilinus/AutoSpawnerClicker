@@ -18,13 +18,13 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Setup Gradle
+      - name: Install Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: 8.6
 
       - name: Build mod
-        run: gradle build
+        run: gradle build --no-daemon
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
