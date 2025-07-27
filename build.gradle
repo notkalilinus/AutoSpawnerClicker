@@ -5,23 +5,21 @@ plugins {
 
 group = 'com.example.autospawner'
 version = '1.0.0'
-archivesBaseName = 'autospawnerclicker'
 
 repositories {
     mavenCentral()
+    maven { url "https://maven.fabricmc.net/" }
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.21.5"
-    mappings loom.officialMojangMappings()
+    minecraft "com.mojang:minecraft:1.20.1"
+    mappings "net.fabricmc:yarn:1.20.1+build.10:v2"
     modImplementation "net.fabricmc:fabric-loader:0.15.11"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.0+1.21.5"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.91.2+1.20.1"
 }
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(21)
-}
-
-loom {
-    splitEnvironmentSourceSets()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
