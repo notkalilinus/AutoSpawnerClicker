@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "autospawnerclicker",
+  "version": "1.0.0",
+  "name": "Auto Spawner Clicker",
+  "description": "Automatically clicks zombie spawner + storage every hour with toggle key.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.autospawner.AutoSpawnerMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "1.21.5",
+    "fabric-api": "*"
+  }
+}
